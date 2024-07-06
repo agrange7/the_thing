@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(15, 15, 15);
+  color: antiquewhite;
+}
+
+header {
+  color: antiquewhite;
+  padding: 24px 0;
+  width: 100%;
+}
+
+p {
+  color: rgb(165, 165, 165);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-li {
+  transition: 0.2s ease-in-out;
+}
+
+.nav-li:hover {
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  color: rgb(183, 40, 50);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-home {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.weekly {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.recommendation-h2-img {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  height: 100%;
+}
+
+.recommendation-paragraph {
+  line-height: 1.4;
+}
+
+.slasher-paragraph {
+  font-style: italic;
+}
+
+.recommendation-p-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendation-h3-p {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recommendation-img {
+  width: 40%;
+  transition: 0.5s;
+}
+
+.recommendation-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recommendation-link {
+  border-bottom: 1px solid antiquewhite;
+  padding-bottom: 2px;
+}
+
+.section-films {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.films-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.films-img {
+  display: flex;
+  flex: 1;
+  min-width: 180px;
+  border-radius: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.films-img:hover {
+  transform: scale(0.9);
+}
+
+.films-more {
+  align-self: flex-end;
+  color: rgb(165, 165, 165);
+  cursor: pointer;
+  border-bottom: 1px solid antiquewhite;
+  padding-bottom: 2px;
+}
+
+.analysis-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-analysis {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.analysis-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 40%;
+  gap: 22px;
+}
+
+.analysis-card-titles {
+  color: rgb(183, 40, 50);
+}
+
+.sections-vertical {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: rgb(21, 21, 21);
+  color: antiquewhite;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+footer span {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+}
