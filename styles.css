@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,8 +31,9 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  max-width: 800px;
+  max-width: 840px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 .nav-ul {
@@ -45,7 +50,7 @@ li {
 }
 
 .nav-li:hover {
-  color: whitesmoke;
+  color: rgb(183, 40, 50);
 }
 
 a {
@@ -118,6 +123,11 @@ strong {
 .recommendation-link {
   border-bottom: 1px solid antiquewhite;
   padding-bottom: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+.recommendation-link:hover {
+  color: rgb(183, 40, 50);
 }
 
 .section-films {
@@ -127,30 +137,68 @@ strong {
 }
 
 .films-section {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 24px;
 }
 
-.films-img {
+.films-resume {
   display: flex;
   flex: 1;
-  min-width: 180px;
+  position: relative;
   border-radius: 6px;
-  transition: 0.5s;
-  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
-.films-img:hover {
-  transform: scale(0.9);
+.films-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: inherit;
+}
+
+.films-resume-hover {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.films-resume-hover-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: antiquewhite;
+}
+
+/* .films-resume:hover .films-resume-hover {
+  opacity: 1;
+}
+
+.films-resume:hover .films-img {
+  opacity: 20%;
+} */
+
+.films-resume:hover {
+  outline: 2px solid rgb(183, 40, 50);
 }
 
 .films-more {
   align-self: flex-end;
-  color: rgb(165, 165, 165);
+  color: antiquewhite;
   cursor: pointer;
   border-bottom: 1px solid antiquewhite;
   padding-bottom: 2px;
+}
+
+.films-more:hover {
+  color: rgb(183, 40, 50);
+  transition: 0.2s ease-in-out;
 }
 
 .analysis-container {
@@ -177,9 +225,18 @@ strong {
   color: rgb(183, 40, 50);
 }
 
+.analysis-link {
+  color: antiquewhite;
+  border-bottom: 1px solid antiquewhite;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 11px;
+}
+
 .sections-vertical {
   max-width: 840px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 footer {
@@ -194,4 +251,5 @@ footer span {
   display: block;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
