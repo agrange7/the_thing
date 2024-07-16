@@ -1,0 +1,28 @@
+header {
+  color: antiquewhite;
+  padding: 24px 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-li {
+  transition: 0.2s ease-in-out;
+}
+
+.nav-li:hover {
+  color: rgb(183, 40, 50);
+}

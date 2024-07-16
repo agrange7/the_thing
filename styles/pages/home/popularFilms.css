@@ -1,0 +1,74 @@
+.section-films {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.films-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.films-resume {
+  display: flex;
+  flex: 1;
+  position: relative;
+  transition: 0.4s outline ease-in-out;
+  border-radius: 6px;
+  outline: 3px solid transparent;
+}
+
+.films-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.films-resume-hover {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.films-resume-hover-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.films-resume:hover .films-resume-hover {
+  opacity: 1;
+}
+
+.films-resume:hover .films-img {
+  opacity: 20%;
+}
+
+.films-resume:hover {
+  border-radius: 6px;
+  outline: 3px solid rgb(183, 40, 50);
+}
+
+.films-more {
+  align-self: flex-end;
+  color: antiquewhite;
+  cursor: pointer;
+  border-bottom: 1px solid antiquewhite;
+  padding-bottom: 2px;
+}
+
+.films-more:hover {
+  color: rgb(183, 40, 50);
+  transition: 0.2s ease-in-out;
+}
