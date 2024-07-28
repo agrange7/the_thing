@@ -1,4 +1,4 @@
 @import url("./styles/global/global.css");
 @import url("./styles/layouts/header/header.css");
-@import url("./styles/pages/home/home.css");
+@import url(./styles/pages/pages.css);
 @import url("./styles/layouts/footer/footer.css");

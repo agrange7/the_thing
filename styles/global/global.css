@@ -16,6 +16,11 @@ body {
   color: antiquewhite;
 }
 
+.main-global {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 p {
   color: rgb(165, 165, 165);
 }
@@ -36,4 +41,53 @@ strong {
   max-width: 840px;
   margin: 0 auto;
   padding: 0px 20px;
+}
+
+.films-container-hover:hover .hover--opacity {
+  opacity: 1;
+}
+
+.films-container-hover:hover .films-img-hover {
+  opacity: 20%;
+}
+
+.films-container-hover:hover {
+  border-radius: 6px;
+  outline: 3px solid rgb(183, 40, 50);
+}
+
+.analysis-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 40%;
+  gap: 22px;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.analysis-card-titles {
+  color: rgb(183, 40, 50);
+}
+
+.analysis-link {
+  color: antiquewhite;
+  border-bottom: 1px solid antiquewhite;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.list-link {
+  display: flex;
+  padding-left: 2rem;
+}
+
+.list-img {
+  width: 110px;
+  border: solid 1px #faebd77d;
+  margin: 0 0 0 -2rem;
+  border-radius: 6px;
 }

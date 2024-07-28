@@ -1,16 +1,16 @@
-.section-films {
+.section-popular-films {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
 }
 
-.films-section {
+.popular-films-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 24px;
 }
 
-.films-resume {
+.popular-films-resume {
   display: flex;
   flex: 1;
   position: relative;
@@ -19,7 +19,7 @@
   outline: 3px solid transparent;
 }
 
-.films-img {
+.popular-films-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -28,7 +28,7 @@
   z-index: 10;
 }
 
-.films-resume-hover {
+.popular-films-resume-hover {
   position: absolute;
   opacity: 0;
   transition: 0.5s ease-in-out;
@@ -38,37 +38,37 @@
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.films-resume-hover-title {
+.popular-films-resume-hover-title {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
   color: antiquewhite;
 }
 
-.films-resume:hover .films-resume-hover {
+/* .popular-films-resume:hover .popular-films-resume-hover {
   opacity: 1;
 }
 
-.films-resume:hover .films-img {
+.popular-films-resume:hover .popular-films-img {
   opacity: 20%;
 }
 
-.films-resume:hover {
+.popular-films-resume:hover {
   border-radius: 6px;
   outline: 3px solid rgb(183, 40, 50);
-}
+} */
 
-.films-more {
+.popular-films-more {
   align-self: flex-end;
   color: antiquewhite;
   cursor: pointer;
   border-bottom: 1px solid antiquewhite;
   padding-bottom: 2px;
-}
-
-.films-more:hover {
-  color: rgb(183, 40, 50);
-  transition: 0.2s ease-in-out;
+  font-weight: 550;
 }

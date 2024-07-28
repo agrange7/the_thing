@@ -1,31 +1,11 @@
-.analysis-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.section-analysis {
+.section-popular-analysis {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
 }
 
-.analysis-card {
+.popular-analysis-container {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-basis: 40%;
-  gap: 22px;
-}
-
-.analysis-card-titles {
-  color: rgb(183, 40, 50);
-}
-
-.analysis-link {
-  color: antiquewhite;
-  border-bottom: 1px solid antiquewhite;
-  width: fit-content;
-  cursor: pointer;
-  font-size: 11px;
+  flex-wrap: wrap;
+  gap: 40px;
 }

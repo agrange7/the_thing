@@ -1,15 +1,13 @@
-.main-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .section-home {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.main-home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
 }
 
 .weekly {
@@ -59,9 +57,5 @@
 .recommendation-link {
   border-bottom: 1px solid antiquewhite;
   padding-bottom: 2px;
-  transition: 0.2s ease-in-out;
-}
-
-.recommendation-link:hover {
-  color: rgb(183, 40, 50);
+  font-weight: 550;
 }

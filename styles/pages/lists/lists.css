@@ -1,0 +1,52 @@
+.main-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.section-trending-lists,
+.section-all-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.trending-lists-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.trending-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trending-list-title {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.all-lists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 70px;
+}
+
+.all-list-container {
+  display: flex;
+  gap: 16px;
+}
+
+.all-list-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-paragraph {
+  font-size: 14px;
+}

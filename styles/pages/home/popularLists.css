@@ -1,0 +1,18 @@
+.section-popular-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.popular-lists-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.popular-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
