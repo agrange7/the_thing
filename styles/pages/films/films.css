@@ -77,8 +77,15 @@
   z-index: 10;
 }
 
-.all-films-hover-paragraph {
+.new-releases-hover-paragraph {
   font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.all-films-hover-paragraph {
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
   color: antiquewhite;

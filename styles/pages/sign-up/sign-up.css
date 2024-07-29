@@ -1,13 +1,14 @@
-/* .main-sign-up {
+.main-sign-up {
   display: flex;
   flex-direction: column;
   row-gap: 80px;
-} */
+}
 
 .section-register {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
+  width: 100%;
 }
 
 .register-form-container {

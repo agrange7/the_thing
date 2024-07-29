@@ -1,0 +1,33 @@
+@media (max-width: 720px) {
+  .weekly {
+    flex-direction: column;
+  }
+
+  .recommendation-img {
+    width: 100%;
+  }
+
+  .recommendation-p-nav {
+    row-gap: 16px;
+  }
+
+  .popular-films-section {
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+  }
+
+  .director-popular {
+    flex-direction: column;
+  }
+
+  .list-link {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  }
+
+  .list-img {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+  }
+}
