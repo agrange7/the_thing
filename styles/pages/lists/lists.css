@@ -51,3 +51,24 @@
 .list-paragraph {
   font-size: 14px;
 }
+
+@media (max-width: 720px) {
+  .trending-lists-container,
+  .list-link {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  }
+
+  .trending-lists-container-special {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.all-list-container {
+  flex-direction: column;
+}
+
+.list-img {
+  height: 100%;
+}
