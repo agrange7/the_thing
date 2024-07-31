@@ -63,12 +63,12 @@
   .trending-lists-container-special {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-}
 
-.all-list-container {
-  flex-direction: column;
-}
+  .list-img {
+    height: 100%;
+  }
 
-.list-img {
-  height: 100%;
+  .all-list-container {
+    flex-direction: column;
+  }
 }
