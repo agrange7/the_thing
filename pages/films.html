@@ -11,6 +11,23 @@
       <a href="../index.html">
         <h1>The Thing</h1>
       </a>
+      <svg
+        class="nav-menu"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
       <ul class="nav-ul">
         <li class="nav-li"><a href="../index.html">Home</a></li>
         <li class="nav-li nav-active"><a href="#">Films</a></li>
@@ -90,7 +107,24 @@
         </div>
       </section>
       <section class="section-all-films sections-vertical">
-        <h2>All</h2>
+        <div class="all-films-title-button-container">
+          <h2>All</h2>
+          <button class="add-film-button">Add film</button>
+          <form class="add-film-form">
+            <label for="card-title">Film Name</label>
+            <input type="text" id="card-title" name="card-title" />
+            <label for="card-description">Sub-Genre</label>
+            <input type="text" id="card-description" name="card-description" />
+            <label for="card-image">Image Url</label>
+            <input
+              type="url"
+              id="card-image"
+              name="card-image"
+              placeholder="https://picsum.photos/200"
+            />
+            <button type="submit">Add</button>
+          </form>
+        </div>
         <div class="all-films-container">
           <div class="all-films-resume films-container-hover">
             <img
@@ -578,10 +612,8 @@
       </section>
     </main>
     <footer>
-      <span>
-        Copyright © 2024, TheThing. 
-      
-      </span>
+      <span> Copyright © 2024, TheThing. </span>
     </footer>
+    <script src="../index.js"></script>
   </body>
 </html>

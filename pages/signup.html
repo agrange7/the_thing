@@ -11,6 +11,23 @@
       <a href="../index.html">
         <h1>The Thing</h1>
       </a>
+      <svg
+        class="nav-menu"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
       <ul class="nav-ul">
         <li class="nav-li"><a href="../index.html">Home</a></li>
         <li class="nav-li">
@@ -54,9 +71,9 @@
     <main class="main-sign-up main-global">
       <section class="section-register sections-vertical">
         <h2>Register</h2>
-          <form class="register-form">
-            <div class="register-form-data-container">
-              <div class="register-form-data">
+        <form class="register-form">
+          <div class="register-form-data-container">
+            <div class="register-form-data">
               <label for="username">Username</label>
               <input class="register-form-input" type="text" name="username" />
 
@@ -103,8 +120,8 @@
                 <option value="zombies">Zombies</option>
               </select>
             </div>
-              <div class="register-textarea-container">
-                <label for="share your horror short film"
+            <div class="register-textarea-container">
+              <label for="share your horror short film"
                 >Share your horror short film
               </label>
               <textarea
@@ -112,21 +129,21 @@
                 name="share your horror short film"
                 placeholder="Have you created a horror short film? Leave us a link or describe it here."
               ></textarea>
-              </div>
-
             </div>
+          </div>
 
-            <div class="register-form-button-container">
-              <button type="submit">Register</button>
-              <button type="reset">Delete</button>
-            </div>
-          </form>
-        </section>
+          <div class="register-form-button-container">
+            <button type="submit">Register</button>
+            <button type="reset">Delete</button>
+          </div>
+        </form>
+      </section>
     </main>
+    <script src="../films.js"></script>
+
     <footer class="footer--alt">
-      <span>
-        Copyright © 2024, TheThing. 
-      </span>
+      <span> Copyright © 2024, TheThing. </span>
     </footer>
+    <script src="../index.js"></script>
   </body>
 </html>
