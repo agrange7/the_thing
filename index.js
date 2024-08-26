@@ -19,13 +19,11 @@ addFilmFormElement.addEventListener("submit", (event)=>{
     event.preventDefault();
 
     const title = document.getElementById("card-title").value; 
-    const description = document.getElementById("card-description").value;
     const imageUrl = document.getElementById("card-image").value || "https://picsum.photos/200";
 
 
     console.log ({
         title,
-        description,
         imageUrl,
     });
 
