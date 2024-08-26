@@ -12,9 +12,10 @@ function openMenu(){
 
 menuElement.addEventListener("click", openMenu)
 
-document
-.querySelector("add-film-form")
-.addEventListener("submit", function(event){
+const addFilmFormElement = document.querySelector(".add-film-form");
+console.log(addFilmFormElement);
+
+addFilmFormElement.addEventListener("submit", (event)=>{
     event.preventDefault();
 
     const title = document.getElementById("card-title").value; 
@@ -45,6 +46,14 @@ document
 
     cardContainer.appendChild(newCard)
 
-    document.querySelector("add-film-form").reset();
-    
+    addFilmFormElement.reset();  
 })
+
+const buttonFilmElement = document.querySelector(".add-film-button");
+
+const deployMenuFilm = () => {
+    addFilmFormElement.classList.toggle("add-film-form--active")
+}
+
+buttonFilmElement.addEventListener("click", deployMenuFilm);
+
