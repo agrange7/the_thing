@@ -64,6 +64,10 @@
   border-radius: 6px;
 }
 
+.add-film-form-input--invalid {
+  border: 1px solid rgba(183, 40, 50, 0.678);
+}
+
 .add-film-form-button {
   color: antiquewhite;
   background-color: rgba(183, 40, 50, 0.678);

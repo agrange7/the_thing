@@ -18,9 +18,31 @@ console.log(addFilmFormElement);
 addFilmFormElement.addEventListener("submit", (event)=>{
     event.preventDefault();
 
+    const inputs = document.querySelectorAll('.add-film-form-input');
+    let isValid = {
+        title : false,
+        image : false
+    };
+    console.log(isValid);
+inputs.forEach ((input, index) => {
+    if (input.value.trim() === ''){
+        input.classList.add('add-film-form-input--invalid');
+        index === 0 ? 
+        isValid.title = false
+        :isValid.image = false
+        console.log(index);
+    }   else {
+        input.classList.remove('add-film-form-input--invalid');
+        isValid.title = true
+        isValid.image = true
+    }
+    console.log(isValid);
+});
+    if (isValid.title && isValid.image) {
+    event.preventDefault();
+
     const title = document.getElementById("card-title").value; 
     const imageUrl = document.getElementById("card-image").value || "https://picsum.photos/200";
-
 
     console.log ({
         title,
@@ -45,6 +67,7 @@ addFilmFormElement.addEventListener("submit", (event)=>{
     cardContainer.appendChild(newCard)
 
     addFilmFormElement.reset();  
+  }
 })
 
 const buttonFilmElement = document.querySelector(".add-film-button");
@@ -54,4 +77,5 @@ const deployMenuFilm = () => {
 }
 
 buttonFilmElement.addEventListener("click", deployMenuFilm);
+
 
