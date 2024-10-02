@@ -1,0 +1,11 @@
+.section-popular-analysis {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.popular-analysis-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}

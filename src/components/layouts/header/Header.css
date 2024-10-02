@@ -1,0 +1,10 @@
+.header {
+  color: antiquewhite;
+  padding: 24px 0;
+  width: 100%;
+}
+
+.footer--alt {
+  position: fixed;
+  bottom: 0;
+}

@@ -1,9 +1,3 @@
-.header {
-  color: antiquewhite;
-  padding: 24px 0;
-  width: 100%;
-}
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -56,11 +50,6 @@
 
 .nav-active {
   color: rgb(183, 40, 50);
-}
-
-.footer--alt {
-  position: fixed;
-  bottom: 0;
 }
 
 @media (max-width: 720px) {
