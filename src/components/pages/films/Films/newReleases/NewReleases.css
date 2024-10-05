@@ -1,0 +1,5 @@
+.section-new-releases {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}

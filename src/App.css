@@ -44,15 +44,15 @@ strong {
   padding: 0px 20px;
 }
 
-.films-container-hover:hover .hover--opacity {
+.film-container-hover:hover .hover--opacity {
   opacity: 1;
 }
 
-.films-container-hover:hover .films-img-hover {
+.film-container-hover:hover .film-card-img-hover {
   opacity: 20%;
 }
 
-.films-container-hover:hover {
+.film-container-hover:hover {
   border-radius: 6px;
   outline: 3px solid rgb(183, 40, 50);
 }
@@ -91,6 +91,19 @@ strong {
   border: solid 1px #faebd77d;
   margin: 0 0 0 -2rem;
   border-radius: 6px;
+}
+
+.arrow-icon-container {
+  display: flex;
+  gap: 8px;
+}
+
+.arrow-icon {
+  cursor: pointer;
+}
+
+.arrow-icon.alternative {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 720px) {

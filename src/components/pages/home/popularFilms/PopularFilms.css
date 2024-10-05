@@ -10,47 +10,6 @@
   gap: 24px;
 }
 
-.popular-films-resume {
-  display: flex;
-  flex: 1;
-  position: relative;
-  transition: 0.4s outline ease-in-out;
-  border-radius: 6px;
-  outline: 3px solid transparent;
-}
-
-.popular-films-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 6px;
-  z-index: 10;
-}
-
-.popular-films-resume-hover {
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-  left: 50%;
-  right: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-
-.popular-films-resume-hover-title {
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: antiquewhite;
-}
-
 /* .popular-films-resume:hover .popular-films-resume-hover {
     opacity: 1;
   }
