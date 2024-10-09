@@ -1,13 +1,13 @@
-import { Heroe } from "./heroe/Heroe";
+import { Hero } from "./hero/Hero";
 import { PopularAnalysis } from "./popularAnalysis/PopularAnalysis";
 import { PopularDirectors } from "./popularDirectors/PopularDirectors";
 import { PopularFilms } from "./popularFilms/popularFilms";
-import { PopularLists } from "./popularLists/popularLists";
+import { PopularLists } from "./popularLists/PopularLists";
 
 export const Home = () => {
   return (
     <>
-      <Heroe />
+      <Hero />
       <PopularFilms />
       <PopularDirectors />
       <PopularLists />

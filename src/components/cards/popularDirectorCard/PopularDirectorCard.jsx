@@ -1,14 +1,15 @@
 import { StarIcon } from "../../Icon/StarIcon";
 import "./PopularDirectorCard.css";
 
-export const PopularDirectorCard = (
+export const PopularDirectorCard = ({
   imageUrl,
   directorName,
   description,
-  popularFilmTitle
-) => {
+  popularDirectorFilms,
+  reverse,
+}) => {
   return (
-    <article className="director-popular">
+    <article className={`director-popular ${reverse ? "reverse" : null}`}>
       <picture className="director-popular-img-container">
         <img className="director-popular-img" src={imageUrl} />
       </picture>
@@ -17,29 +18,22 @@ export const PopularDirectorCard = (
           <a href="">
             <h3>{directorName}</h3>
           </a>
-          <p className="director-popular-paragraph">{description}</p>
-          <p className="director-popular-paragraph">{description}</p>
+          {description.map((des) => {
+            return <p className="director-popular-paragraph">{des}</p>;
+          })}
         </div>
         <div className="popular-movies-directors-container">
           <ul className="popular-movies-directors-list">
-            <li className="popular-movies-directors-li">
-              <StarIcon />
-              <a className="popular-movies-directors-title" href="#">
-                {popularFilmTitle}
-              </a>
-            </li>
-            <li className="popular-movies-directors-li">
-              <StarIcon />
-              <a className="popular-movies-directors-title" href="#">
-                {popularFilmTitle}
-              </a>
-            </li>
-            <li className="popular-movies-directors-li">
-              <StarIcon />
-              <a className="popular-movies-directors-title" href="#">
-                {popularFilmTitle}
-              </a>
-            </li>
+            {popularDirectorFilms.map((popular) => {
+              return (
+                <li className="popular-movies-directors-li">
+                  <StarIcon />
+                  <a className="popular-movies-directors-title" href="#">
+                    {popular}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

@@ -10,9 +10,3 @@
   flex-wrap: wrap;
   gap: 45px;
 }
-
-.popular-list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}

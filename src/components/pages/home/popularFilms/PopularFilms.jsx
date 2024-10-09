@@ -1,4 +1,4 @@
-import { FilmCard } from "../../../FilmCard";
+import { FilmCard } from "../../../cards/filmCard/FilmCard";
 import "./PopularFilms.css";
 export const PopularFilms = () => {
   return (

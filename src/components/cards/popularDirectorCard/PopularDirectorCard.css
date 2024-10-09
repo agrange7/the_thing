@@ -1,0 +1,71 @@
+.director-popular {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 32px;
+  column-gap: 50px;
+}
+
+.director-popular-img-container {
+  min-width: 40%;
+  height: 500px;
+  z-index: -1;
+  position: relative;
+  background-color: rgb(100 2 9);
+  border-radius: 6px;
+}
+
+.director-popular-img {
+  mask-image: linear-gradient(black, transparent),
+    linear-gradient(to right, black, transparent),
+    linear-gradient(to left, black, transparent),
+    linear-gradient(to top, black, transparent);
+  border-radius: 6px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+}
+
+.director-popular.reverse {
+  flex-direction: row-reverse;
+}
+
+.director-popular-name-director {
+  font-size: 16px;
+}
+
+.director-popular-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 32px;
+}
+
+.director-popular-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popular-movies-directors-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.popular-movies-directors-li {
+  font-weight: 550;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.popular-movies-directors-title {
+  text-align: center;
+}
+
+.popular-movies-directors-star-icon {
+  width: 22px;
+}
