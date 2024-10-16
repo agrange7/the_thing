@@ -1,0 +1,23 @@
+.analysis-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 47%;
+  gap: 22px;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.analysis-card-titles {
+  color: rgb(183, 40, 50);
+}
+
+.analysis-link {
+  color: antiquewhite;
+  border-bottom: 1px solid antiquewhite;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}

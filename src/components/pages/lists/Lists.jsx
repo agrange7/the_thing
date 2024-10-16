@@ -1,4 +1,6 @@
-export const Lists = (ListCard) => {
+import { ListCard } from "../../cards/listCard/ListCard";
+
+export const Lists = () => {
   return (
     <>
       <section className="section-trending-lists sections-vertical">

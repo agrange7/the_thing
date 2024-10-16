@@ -2,12 +2,16 @@ export const DirectorOfTheWeekCard = ({
   directorImgUrl,
   nameDirector,
   description,
-  imgUrl,
+  popularMovies,
 }) => {
   return (
     <article className="director-card">
       <div className="director-img-container">
-        <img className="director-img" src={directorImgUrl} />
+        <img
+          className="director-img"
+          src={directorImgUrl}
+          alt={`${nameDirector}`}
+        />
       </div>
       <div className="director-info-container">
         <div className="director-title-paragraph">
@@ -17,21 +21,15 @@ export const DirectorOfTheWeekCard = ({
         <div className="director-popular-movies">
           <h4>Popular Movies</h4>
           <div className="director-popular-movies-img-container">
-            <div className="director-popular-movies-img-wrapper">
-              <img className="director-popular-movies-img" src={imgUrl} />
-            </div>
-
-            <div className="director-popular-movies-img-wrapper">
-              <img className="director-popular-movies-img" src={imgUrl} />
-            </div>
-
-            <div className="director-popular-movies-img-wrapper">
-              <img className="director-popular-movies-img" src={imgUrl} />
-            </div>
-
-            <div className="director-popular-movies-img-wrapper">
-              <img className="director-popular-movies-img" src={imgUrl} />
-            </div>
+            {popularMovies.map((movieImgUrl, index) => (
+              <div key={index} className="director-popular-movies-img-wrapper">
+                <img
+                  className="director-popular-movies-img"
+                  src={movieImgUrl}
+                  alt="Popular movie"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

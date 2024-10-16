@@ -38,6 +38,14 @@ export const Carousel = () => {
     setCurrentSubgenre(subgenre[newIndex]);
   };
 
+  const prevImage = () => {
+    const newIndex = showImage <= 0 ? list.length - 1 : showImage - 1;
+    setShowImage(newIndex);
+    setCurrentTitle(title[newIndex]);
+    setCurrentDescription(description[newIndex]);
+    setCurrentSubgenre(subgenre[newIndex]);
+  };
+
   return (
     <>
       <article className="weekly">
@@ -62,7 +70,7 @@ export const Carousel = () => {
             <div className="arrow-icon-container">
               <svg
                 className="arrow-icon alternative"
-                onClick={nextImage}
+                onClick={prevImage}
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

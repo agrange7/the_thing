@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navegation.css";
 import { DropDownMenuIcon } from "../../Icon/dropDownMenuIcon";
 
@@ -9,15 +10,15 @@ export const Navegation = ({ links }) => {
 
   return (
     <nav className="nav-container">
-      <a href="./">
+      <Link to="/">
         <h1>The Thing</h1>
-      </a>
+      </Link>
       <DropDownMenuIcon onClick={menuToggle} />
       <ul className={`nav-ul ${menuDeploy ? "nav-ul--open" : ""}`}>
         {links.map(({ title, url }, index) => {
           return (
             <li key={index} className="nav-li">
-              <a href={url}>{title}</a>
+              <Link to={url}>{title}</Link>
             </li>
           );
         })}
@@ -38,9 +39,9 @@ export const Navegation = ({ links }) => {
           <path d="M21 21l-6 -6" />
         </svg>
         <li className="nav-li">
-          <a className="sign-up-button" href="./pages/signup.html">
+          <Link className="sign-up-button" to="/signup">
             Sign Up
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

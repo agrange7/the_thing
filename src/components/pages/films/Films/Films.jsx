@@ -1,5 +1,5 @@
-import { AllFilms } from "../allFilms/allFilms";
-import { NewReleases } from "../newReleases/newReleases";
+import { AllFilms } from "./allFilms/AllFilms";
+import { NewReleases } from "./newReleases/NewReleases";
 
 export const Films = () => {
   return (

@@ -3,3 +3,8 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.list-link {
+  display: flex;
+  padding-left: 2rem;
+}
