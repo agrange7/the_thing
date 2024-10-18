@@ -1,4 +1,4 @@
-export const ListCard = ({ list }) => {
+export const ListCard = ({ list, paragraph }) => {
   return (
     <div className="popular-list-container">
       <a className="list-link" href="#">

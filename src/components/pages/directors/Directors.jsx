@@ -1,3 +1,4 @@
+import "./Directors.css";
 import { DirectorCard } from "../../cards/directorCard/DirectorCard";
 import { DirectorOfTheWeekCard } from "../../cards/directorOfTheWeekCard/DirectorOfTheWeekCard";
 

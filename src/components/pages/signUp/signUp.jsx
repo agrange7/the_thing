@@ -1,3 +1,5 @@
+import "./SignUp.css";
+
 export const SignUp = () => {
   return (
     <section className="section-register sections-vertical">

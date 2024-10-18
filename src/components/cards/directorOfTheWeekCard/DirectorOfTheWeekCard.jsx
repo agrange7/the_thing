@@ -1,3 +1,5 @@
+import "./DirectorOfTheWeekCard.css";
+
 export const DirectorOfTheWeekCard = ({
   directorImgUrl,
   nameDirector,

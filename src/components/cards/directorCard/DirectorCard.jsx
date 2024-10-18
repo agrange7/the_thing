@@ -1,3 +1,5 @@
+import "./DirectorCard.css";
+
 export const DirectorCard = ({ name, descripcion, popularMovies }) => {
   return (
     <div className="director-card">

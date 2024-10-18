@@ -1,0 +1,55 @@
+.director-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #121212;
+}
+
+.director-img-container {
+  min-width: 45%;
+}
+
+.director-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgb(100 2 9);
+}
+
+.director-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 16px;
+}
+
+.director-title-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.director-popular-movies {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.director-popular-movies-img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.director-popular-movies-img-wrapper {
+  flex: 1;
+  flex-basis: 70px;
+}
+
+.director-popular-movies-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
