@@ -11,7 +11,12 @@ export const ListCard = ({ list, paragraph }) => {
           />
         ))}
       </a>
-      <h3>{list.listTitle}</h3>
+      <div class="all-list-text-container">
+        <h3>{list.listTitle}</h3>
+        <p class="list-paragraph">
+          {paragraph ? <p className="list-paragraph">{paragraph}</p> : null}
+        </p>
+      </div>
     </div>
   );
 };

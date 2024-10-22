@@ -8,3 +8,18 @@
   display: flex;
   padding-left: 2rem;
 }
+
+.all-list-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trending-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.list-paragraph {
+  font-size: 14px;
+}

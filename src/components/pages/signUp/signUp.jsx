@@ -1,5 +1,24 @@
 import "./SignUp.css";
 
+const subGenres = [
+  { value: "body-horror", label: "Body Horror" },
+  { value: "folk", label: "Folk" },
+  { value: "found-footage", label: "Found Footage" },
+  { value: "gothic", label: "Gothic" },
+  { value: "giallo", label: "Giallo" },
+  { value: "gore", label: "Gore" },
+  { value: "home-invasion-survival", label: "Home Invasion and Survival" },
+  { value: "horror", label: "Horror" },
+  { value: "monsters", label: "Monsters" },
+  { value: "paranormal", label: "Paranormal" },
+  { value: "psychological", label: "Psychological" },
+  { value: "sci-fi", label: "Sci-Fi" },
+  { value: "slasher", label: "Slasher" },
+  { value: "supernatural", label: "Supernatural" },
+  { value: "vampires", label: "Vampires" },
+  { value: "zombies", label: "Zombies" },
+];
+
 export const SignUp = () => {
   return (
     <section className="section-register sections-vertical">
@@ -7,58 +26,45 @@ export const SignUp = () => {
       <form className="register-form">
         <div className="register-form-data-container">
           <div className="register-form-data">
-            <label for="username">Username</label>
+            <label htmlFor="username">Username</label>
             <input
               className="register-form-input"
               type="text"
               name="username"
             />
 
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               className="register-form-input"
               type="password"
               name="password"
             />
 
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input className="register-form-input" type="email" name="email" />
 
-            <label for="day of birth">Day of Birth</label>
+            <label htmlFor="day of birth">Day of Birth</label>
             <input
               className="register-form-input"
               type="date"
               name="day of birth"
             />
 
-            <label for="favourite sub-genre">Favourite Sub-Genre</label>
+            <label htmlFor="favourite sub-genre">Favourite Sub-Genre</label>
             <select
               className="register-form-select-subgenre"
               name=""
               id="sub-genre"
             >
-              <option value="body-horror">Body Horror</option>
-              <option value="folk">Folk</option>
-              <option value="found-footage">Found Footage</option>
-              <option value="gothic">Gothic</option>
-              <option value="giallo">Giallo</option>
-              <option value="gore">Gore</option>
-              <option value="home-invasion-survival">
-                Home Invasion and Survival
-              </option>
-              <option value="horror">Horror</option>
-              <option value="monsters">Monsters</option>
-              <option value="paranormal">Paranormal</option>
-              <option value="psychological">Psychological</option>
-              <option value="sci-fi">Sci-Fi</option>
-              <option value="slasher">Slasher</option>
-              <option value="supernatural">Supernatural</option>
-              <option value="vampires">Vampires</option>
-              <option value="zombies">Zombies</option>
+              {subGenres.map((genre) => (
+                <option key={genre.value} value={genre.value}>
+                  {genre.label}
+                </option>
+              ))}
             </select>
           </div>
           <div className="register-textarea-container">
-            <label for="share your horror short film">
+            <label htmlFor="share your horror short film">
               Share your horror short film
             </label>
             <textarea
