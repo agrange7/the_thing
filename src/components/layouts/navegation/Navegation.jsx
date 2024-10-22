@@ -8,7 +8,6 @@ export const Navegation = ({ links }) => {
   const [menuDeploy, setMenuDeploy] = useState(false);
   const menuToggle = () => setMenuDeploy(!menuDeploy);
 
-  console.log(links);
   return (
     <nav className="nav-container">
       <Link to="/">

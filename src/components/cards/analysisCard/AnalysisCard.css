@@ -48,6 +48,7 @@
 
 .analysis-card.bg {
   background-color: #161616;
+  padding-bottom: 33px;
 }
 
 .analysis-card.bg:before {

@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+import "./ListCard.css";
+
 export const ListCard = ({ list, paragraph }) => {
   return (
     <div className="popular-list-container">
@@ -19,4 +22,12 @@ export const ListCard = ({ list, paragraph }) => {
       </div>
     </div>
   );
+};
+
+ListCard.propTypes = {
+  list: PropTypes.shape({
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    listTitle: PropTypes.string.isRequired,
+  }).isRequired,
+  paragraph: PropTypes.string,
 };

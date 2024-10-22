@@ -13,7 +13,7 @@ export const Analysis = () => {
     },
     {
       title: "The Nightmare on Elm Street saga",
-      description: `The "Nightmare on Elm Street" saga, spearheaded by Wes Craven, revolutionized the slasher genre with its blend of supernatural horror and psychological terror. Freddy Krueger, with his iconic glove and burned visage...`,
+      description: `"The Nightmare on Elm Street" saga, spearheaded by Wes Craven, revolutionized the slasher genre with its blend of supernatural horror and psychological terror. Freddy Krueger, with his iconic glove and burned visage...`,
     },
   ];
 
@@ -125,15 +125,13 @@ export const Analysis = () => {
       </section>
 
       <section className="section-analysis sections-vertical">
-        <h2>Video Analysis</h2>
+        <h2>Videoanalysis</h2>
         <ul className="analysis-container">
           {videoAnalysisData.map((item, index) => (
             <AnalysisCard
               key={index}
               title={item.title}
               description={item.description}
-              alternative={true}
-              flex={true}
             />
           ))}
         </ul>
@@ -147,8 +145,6 @@ export const Analysis = () => {
               key={index}
               title={item.title}
               description={item.description}
-              alternative={true}
-              flex={true}
             />
           ))}
         </ul>

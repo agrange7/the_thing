@@ -70,7 +70,7 @@ export const Lists = () => {
         "./images/films_page/all_films/sisters.jpg",
         "./images/films_page/all_films/pieces.jpg",
         "./images/films_page/all_films/maniac.jpg",
-        "./images/films_page/all_films/house of 1000 corpses.jpg",
+        "./images/films_page/all_films/house_of_1000_corpses.jpg",
       ],
       paragraph:
         "A selection of must-see horror films for 2024, featuring upcoming releases and hidden gems.",

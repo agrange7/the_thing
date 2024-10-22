@@ -1,4 +1,6 @@
+import PropTypes from "prop-types";
 import "./FilmCard.css";
+
 export const FilmCard = ({ imageUrl, directorName, allFilmsAlt }) => {
   return (
     <article className="film-card-resume film-container-hover">
@@ -14,4 +16,10 @@ export const FilmCard = ({ imageUrl, directorName, allFilmsAlt }) => {
       </div>
     </article>
   );
+};
+
+FilmCard.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  directorName: PropTypes.string.isRequired,
+  allFilmsAlt: PropTypes.bool.isRequired,
 };

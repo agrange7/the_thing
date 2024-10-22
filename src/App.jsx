@@ -1,3 +1,4 @@
+import "./App.css";
 import { RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 import { Analysis } from "./components/pages/analysis/Analysis";
@@ -6,7 +7,6 @@ import { Films } from "./components/pages/films/Films/Films";
 import { Home } from "./components/pages/home/Home";
 import { Lists } from "./components/pages/lists/Lists";
 import { SignUp } from "./components/pages/signUp/SignUp";
-import "./App.css";
 import { Root } from "./root/root";
 
 function App() {

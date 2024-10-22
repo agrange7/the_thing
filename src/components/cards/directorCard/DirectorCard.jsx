@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./DirectorCard.css";
 
 export const DirectorCard = ({ name, descripcion, popularMovies }) => {
@@ -25,4 +26,10 @@ export const DirectorCard = ({ name, descripcion, popularMovies }) => {
       </div>
     </div>
   );
+};
+
+DirectorCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  descripcion: PropTypes.string.isRequired,
+  popularMovies: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./DirectorOfTheWeekCard.css";
 
 export const DirectorOfTheWeekCard = ({
@@ -37,4 +38,10 @@ export const DirectorOfTheWeekCard = ({
       </div>
     </article>
   );
+};
+DirectorOfTheWeekCard.propTypes = {
+  directorImgUrl: PropTypes.string.isRequired,
+  nameDirector: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  popularMovies: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

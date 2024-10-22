@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { StarIcon } from "../../Icon/StarIcon";
 import "./PopularDirectorCard.css";
 
@@ -39,4 +40,12 @@ export const PopularDirectorCard = ({
       </div>
     </article>
   );
+};
+
+PopularDirectorCard.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  directorName: PropTypes.string.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
+  popularDirectorFilms: PropTypes.arrayOf(PropTypes.string).isRequired,
+  reverse: PropTypes.bool,
 };

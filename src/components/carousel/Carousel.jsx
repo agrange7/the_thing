@@ -1,16 +1,21 @@
 import { useState } from "react";
+import { ArrowIcon } from "../Icon/ArrowIcon";
 
 export const Carousel = () => {
   const list = [
-    "./images/home_popular_films/alien.jpg",
+    "./images/home_popular_films/the-texas-chainsaw-massacre.jpg",
     "./images/home_popular_films/carrie.jpg",
     "./images/home_popular_films/jaws.jpg",
   ];
 
-  const title = ["Alien", "Carrie", "Jaws"];
+  const title = [
+    "The Texas Chainsaw Massacre (1972)",
+    "Carrie (1976)",
+    "Jaws (1975)",
+  ];
 
   const description = [
-    "is a sci-fi horror masterpiece set aboard a commercial space tug, where the crew faces off against a deadly extraterrestrial creature. Directed by Ridley Scott, the film builds tension through its claustrophobic atmosphere and iconic creature design by H.R. Giger. Released in 1979, it has become a hallmark of both the science fiction and horror genres.",
+    "is a horror classic following a group of youths who encounter a family of cannibals in Texas, led by Leatherface, a killer with a mask made of human skin and a chainsaw as his primary weapon. The film is renowned for its intensity and brutality, becoming an icon of the slasher genre since its release in 1974.",
 
     "is a supernatural horror drama based on Stephen King's novel about a bullied high school girl who discovers she has telekinetic powers. Directed by Brian De Palma, the 1976 film explores themes of repression, revenge, and adolescent trauma, culminating in one of the most iconic prom scenes in horror history.",
 
@@ -18,7 +23,7 @@ export const Carousel = () => {
   ];
 
   const subgenre = [
-    "Sci-fi Horror, combining elements of science fiction and horror, often involving extraterrestrial beings, futuristic settings, or advanced technology mixed with terrifying or unsettling elements.",
+    "Slasher subgenre of horror films involving a killer or a group of killers stalking and murdering a group of people, usually by use of bladed or sharp tools.",
 
     "Supernatural Horror, involving paranormal forces, telekinetic abilities, and the terror of the unknown, often intertwined with themes of psychological horror and human vulnerability.",
 
@@ -68,42 +73,8 @@ export const Carousel = () => {
             </a>
 
             <div className="arrow-icon-container">
-              <svg
-                className="arrow-icon alternative"
-                onClick={prevImage}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M5 12l14 0" />
-                <path d="M15 16l4 -4" />
-                <path d="M15 8l4 4" />
-              </svg>
-              <svg
-                className="arrow-icon"
-                onClick={nextImage}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M5 12l14 0" />
-                <path d="M15 16l4 -4" />
-                <path d="M15 8l4 4" />
-              </svg>
+              <ArrowIcon onClick={prevImage} prevArrow={true} />
+              <ArrowIcon onClick={nextImage} />
             </div>
           </nav>
         </div>

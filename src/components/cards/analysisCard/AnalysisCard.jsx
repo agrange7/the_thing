@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+import "./AnalysisCard.css";
 export const AnalysisCard = ({ title, description, alternative, flex }) => {
   return (
     <li className={`analysis-card ${alternative && "bg"} ${flex && "flex"}`}>
@@ -8,4 +10,10 @@ export const AnalysisCard = ({ title, description, alternative, flex }) => {
       </a>
     </li>
   );
+};
+AnalysisCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  alternative: PropTypes.bool,
+  flex: PropTypes.bool,
 };
