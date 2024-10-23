@@ -95,7 +95,7 @@ export const Lists = () => {
         <div className="all-lists-container">
           {allLists.map((list, index) => (
             <div className="all-list-container" key={index}>
-              <ListCard list={list} paragraph={list.paragraph} />
+              <ListCard list={list} paragraph={list.paragraph} row={true} />
             </div>
           ))}
         </div>

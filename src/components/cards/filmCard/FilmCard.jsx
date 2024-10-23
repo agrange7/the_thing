@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import "./FilmCard.css";
 
 export const FilmCard = ({ imageUrl, directorName, allFilmsAlt }) => {
+  console.log(allFilmsAlt);
+
   return (
     <article className="film-card-resume film-container-hover">
       <img className="film-card-img film-card-img-hover" src={imageUrl} />

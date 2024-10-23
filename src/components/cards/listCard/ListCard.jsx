@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
 import "./ListCard.css";
 
-export const ListCard = ({ list, paragraph }) => {
+export const ListCard = ({ list, paragraph, row }) => {
   return (
-    <div className="popular-list-container">
+    <div
+      className={`popular-list-container ${row ? "all-list-container" : ""}`}
+    >
+      {" "}
       <a className="list-link" href="#">
         {list.images.map((imgUrl, imgIndex) => (
           <img
@@ -30,4 +33,5 @@ ListCard.propTypes = {
     listTitle: PropTypes.string.isRequired,
   }).isRequired,
   paragraph: PropTypes.string,
+  row: PropTypes.bool.isRequired,
 };
