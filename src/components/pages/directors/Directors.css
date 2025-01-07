@@ -1,0 +1,17 @@
+.main-directors {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.section-director {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  width: 100%;
+}
+.all-directors-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 24px;
+}

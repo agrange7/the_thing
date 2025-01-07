@@ -1,0 +1,40 @@
+.popular-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list-link {
+  display: flex;
+  padding-left: 2rem;
+  border: solid 1px #faebd717;
+  border-radius: 6px;
+}
+
+.list-img {
+  width: 110px;
+  margin: 0 0 0 -2rem;
+  border-radius: 6px;
+}
+
+.trending-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.all-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.all-list-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list-paragraph {
+  font-size: 14px;
+}

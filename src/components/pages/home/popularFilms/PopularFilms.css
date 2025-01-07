@@ -1,0 +1,39 @@
+.section-popular-films {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.popular-films-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+/* .popular-films-resume:hover .popular-films-resume-hover {
+    opacity: 1;
+  }
+  
+  .popular-films-resume:hover .popular-films-img {
+    opacity: 20%;
+  }
+  
+  .popular-films-resume:hover {
+    border-radius: 6px;
+    outline: 3px solid rgb(183, 40, 50);
+  } */
+
+.popular-films-more {
+  align-self: flex-end;
+  color: antiquewhite;
+  cursor: pointer;
+  border-bottom: 1px solid antiquewhite;
+  padding-bottom: 2px;
+  font-weight: 550;
+}
+
+@media (max-width: 720px) {
+  .popular-films-section {
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+  }
+}

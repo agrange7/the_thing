@@ -1,0 +1,30 @@
+.section-trending-lists,
+.section-all-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  width: 100%;
+}
+
+.trending-lists-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-list-title {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.all-lists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 70px;
+}
+
+.all-list-container {
+  display: flex;
+  gap: 16px;
+}

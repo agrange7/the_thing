@@ -1,0 +1,23 @@
+.section-popular-directors {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .director-popular-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+  }
+  
+  .line-separator {
+    width: 70%;
+    height: 0.1px;
+    background-color: #f0f8ff0d; 
+    margin: 0 auto; /
+  }
+  @media (max-width: 720px) {
+    .director-popular {
+        flex-direction: column;
+      }
+  }

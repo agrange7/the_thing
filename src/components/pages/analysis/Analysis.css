@@ -1,0 +1,16 @@
+.main-analysis {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.section-analysis {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.analysis-container {
+  display: flex;
+  gap: 40px;
+}
