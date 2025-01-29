@@ -1,7 +1,7 @@
 import { Hero } from "./hero/Hero";
 import { PopularAnalysis } from "./popularAnalysis/PopularAnalysis";
 import { PopularDirectors } from "./popularDirectors/PopularDirectors";
-import { PopularFilms } from "./popularFilms/popularFilms";
+import { PopularFilms } from "./popularFilms/PopularFilms";
 import { PopularLists } from "./popularLists/PopularLists";
 
 export const Home = () => {
