@@ -51,6 +51,4 @@ function App() {
   );
 }
 
-console.log(carlitos);
-
 export default App;
