@@ -7,7 +7,7 @@ import { Films } from "./components/pages/films/Films/Films";
 import { Home } from "./components/pages/home/Home";
 import { Lists } from "./components/pages/lists/Lists";
 import { SignUp } from "./components/pages/SignUp";
-import { Root } from "./root/root";
+import { Root } from "./root/Root";
 
 function App() {
   const router = createBrowserRouter([
