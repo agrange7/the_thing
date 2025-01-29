@@ -1,4 +1,4 @@
-import "./starIcon.css";
+import "./StarIcon.css";
 export const StarIcon = () => {
   return (
     <svg
